@@ -1,0 +1,58 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+int main(){
+    string text;// where the lines of the text are going to be stored at the end
+    // where we are going to store the user's file name
+    string txt_file;
+    int k;
+    string word;
+
+      // here is where the line of the files are 
+    // going to be searched based on the file that the user chose
+    string line;
+    // where we are going to store the amount of times that the word
+    // has appeared
+    int updatedWordCount;
+    cout<< "Enter the name of the filename: "<< endl;
+    cin >> txt_file;
+    cout <<"Enter the word: "<< endl;
+    cin >>word;
+    cout<<"Enter the amount of times that the world should appear in the file"<< endl;
+    cin >> k;
+
+    //input file stream, call variable user_file
+    ifstream user_file;
+    // open the text file
+    user_file.open(txt_file);
+// we are now going to get the file and store it on the string name text, 
+// so we can then see how many times the word has appeared 
+    if(user_file.is_open()){
+        while(getline(user_file, line)){
+            // cout << line << endl;
+
+            // perhaps I am going to the for loop to fix the issues 
+            
+            text += line;
+        }
+
+        for(line.find(word) == true; int wordCount=0; wordCount++){
+                    updatedWordCount=wordCount++;
+                    
+                    // cout <<"The number of words is: " << wordCount<< endl;
+                    // return wordCount;
+                }
+
+    
+    user_file.close();
+}
+// this was an example on to see if the variable was updating
+// cout<< updatedWordCount<< endl;
+ if (updatedWordCount>k){
+        cout << "the word: "<< word<< "has appeared more than "<< k<< " times as the start of the sentence"<< endl;
+    }
+    return 0;
+}
+// built in function in fstring 

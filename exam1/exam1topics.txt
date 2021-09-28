@@ -1,0 +1,28 @@
+Basics of cpp
+-iostream, namespace, libraries(string, fstream)
+- variables and their declarations 
+- functions (call by value and call by reference(constant reference))
+- for and while loop
+- conditional (if, else, switches/ cases)
+- arrays
+- pointers
+
+Files
+- functions operating on files 
+
+Strings 
+- functions operating on strings
+
+Object Oriented Program (OOP)
+- classes 
+    -private; public
+        - class variablesß
+        - class member functions 
+        - friend functions
+    - scope resolution
+    - Operation overloading
+    - inheritence 
+
+There will be dereferncing and and referncing, how to pass an array to a function.
+this will test if you know a pointer and if you know how to iterate to an address, and so.
+
